@@ -8,43 +8,48 @@
 
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      line-height: 1.6;
-      color: #333;
-    }
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;       /* centrato orizzontalmente */
+  padding: 20px;        /* spazio interno per non toccare i bordi */
+  line-height: 1.6;
+  color: #333;
+  box-sizing: border-box;
+}
 
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-    header img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-    }
+header img {
+  max-width: 100%;       /* immagine responsive */
+  height: auto;
+  margin-bottom: 20px;
+}
 
-    h2 {
-      margin-top: 40px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+h2 {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;      /* così le icone non escono dallo schermo */
+}
 
-    a {
-      color: #0056b3;
-      text-decoration: none;
-    }
+a {
+  color: #0056b3;
+  text-decoration: none;
+  word-break: break-word; /* evita che URL lunghi escano dal layout */
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+a:hover {
+  text-decoration: underline;
+}
 
-    hr {
-      margin: 40px 0;
-    }
+hr {
+  margin: 40px 0;
+}
+
   </style>
 </head>
 
@@ -192,5 +197,4 @@
 
 </body>
 </html>
-
 
